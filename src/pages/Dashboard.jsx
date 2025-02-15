@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-//import api from '../api/config';
 import axios from 'axios';
 
 function Dashboard() {
@@ -15,7 +14,6 @@ function Dashboard() {
 
   const fetchStats = async () => {
     try {
-      // Fetch data sequentially to avoid Symbol cloning issues
       const booksResponse = await axios.get('http://localhost:5000/api/books');
       const membersResponse = await axios.get('http://localhost:5000/api/members');
       const loansResponse = await axios.get('http://localhost:5000/api/loans');
@@ -29,7 +27,6 @@ function Dashboard() {
       });
     } catch (error) {
       console.error('Error fetching dashboard stats:', error);
-      // Set default values in case of error
       setStats({
         totalBooks: 0,
         totalMembers: 0,
