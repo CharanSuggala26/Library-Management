@@ -148,7 +148,7 @@ function Books() {
       await axios.delete(`http://localhost:5000/api/books/${id}`);
       fetchBooks();
     } catch (error) {
-      console.error('Error deleting book:', error);
+      console.error('Error deleting the book:', error);
     }
   };
 
