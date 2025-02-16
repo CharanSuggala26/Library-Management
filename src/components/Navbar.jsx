@@ -12,6 +12,7 @@ function Navbar() {
     { path: '/books', name: 'Books', icon: Book },
     { path: '/members', name: 'Members', icon: Users },
     { path: '/loans', name: 'Loans', icon: BookOpen },
+    { path: '/auth', name: 'Login', icon: Users },
   ];
 
   const isActive = (path) => location.pathname === path;
