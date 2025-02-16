@@ -69,13 +69,13 @@ function Loans() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-50 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-50 pt-16">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-purple-600">
+        <h1 className="text-4xl font-bold mb-8 text-transparent text-center bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">
           Loans Management
         </h1>
       </motion.div>

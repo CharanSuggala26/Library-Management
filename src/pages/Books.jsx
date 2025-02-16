@@ -51,7 +51,7 @@ function Books() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+        <h1 className="text-4xl font-bold mb-8 text-transparent bg-clip-text text-center bg-gradient-to-r from-pink-500 to-purple-600 ">
           Books Management
         </h1>
       </motion.div>
