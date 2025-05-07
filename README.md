@@ -31,5 +31,25 @@ A full-stack **Library Management System** built using the MERN stack to manage 
 
 ---
 
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/library-management-system.git
+cd library-management-system
+```
+### 2. Create a .env file
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+```
+### 3. Start the Server
+```bash
+npm start
+```
+
 
 
