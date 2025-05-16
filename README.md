@@ -2,7 +2,7 @@
 
 A full-stack **Library Management System** built using the MERN stack to manage library operations such as adding books, issuing/returning books, user roles (admin/user), and transaction history.
 
----
+
 
 ## 🚀 Features
 
@@ -14,7 +14,7 @@ A full-stack **Library Management System** built using the MERN stack to manage 
 - 📅 Due date tracking
 - 🌐 Responsive front-end with React
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -27,9 +27,9 @@ A full-stack **Library Management System** built using the MERN stack to manage 
  Mongoose    | MongoDB ODM             
  JWT         | Authentication          
  Axios       | HTTP client             
- Tailwind CSS| Styling (optional)      
+ Tailwind CSS| Styling       
 
----
+
 
 ## ⚙️ Installation
 
