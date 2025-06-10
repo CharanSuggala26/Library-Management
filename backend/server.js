@@ -2,10 +2,10 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-
 import bookRoutes from './routes/books.js';
 import memberRoutes from './routes/members.js';
 import loanRoutes from './routes/loans.js';
+import authRoutes from './routes/userApp.js';
 
 dotenv.config();
 
@@ -14,12 +14,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes
 app.use('/api/books', bookRoutes);
 app.use('/api/members', memberRoutes);
 app.use('/api/loans', loanRoutes);
+app.use('/api/auth', authRoutes);
 
-// Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch((error) => console.error('MongoDB connection error:', error));
