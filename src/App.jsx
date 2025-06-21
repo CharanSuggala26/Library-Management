@@ -4,7 +4,6 @@ import Dashboard from './pages/Dashboard';
 import Books from './pages/Books';
 import Members from './pages/Members';
 import Loans from './pages/Loans';
-import AuthForm from './pages/Login';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
             <Route path="/books" element={<Books />} />
             <Route path="/members" element={<Members />} />
             <Route path="/loans" element={<Loans />} />
-            <Route path="/register" element={<AuthForm />} />
           </Routes>
         </main>
       </div>

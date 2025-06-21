@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 import bookRoutes from './routes/books.js';
 import memberRoutes from './routes/members.js';
 import loanRoutes from './routes/loans.js';
-import userApp from './routes/userApp.js';
+
 
 dotenv.config();
 
@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/api/books', bookRoutes);
 app.use('/api/members', memberRoutes);
 app.use('/api/loans', loanRoutes);
-app.use('/api/user', userApp);
+
 
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
